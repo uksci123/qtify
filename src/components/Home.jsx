@@ -4,6 +4,7 @@ import headphone from '../assets/headphone.png'
 import FilterSongCategory from './FilterSongCategory'
 import ListSong from './ListSong'
 import { useState } from 'react'
+import FAQs from './FAQs'
 function Home() {
 
   const [filterGenre , setFilterGenre] = useState('all');
@@ -16,7 +17,7 @@ function Home() {
     <>
       <Header/>
 
-      <main>
+      <main className='bg-secondry'>
         {/*Hero Image*/}
         <section className='flex items-center justify-center bg-secondry w-full h-64'>
             <article className='flex w-3/4 h-2/3 justify-center'>
@@ -50,6 +51,11 @@ function Home() {
             <article>
                 <ListSong filterGenre={filterGenre}/>
             </article>
+        </section>
+
+        {/*FAQs*/}
+        <section className='bg-secondry pb-5'>
+          <FAQs/>
         </section>
       </main>
 

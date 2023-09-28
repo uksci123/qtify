@@ -26,7 +26,7 @@ const ListSong = ({filterGenre}) => {
       }
     },[filterGenre])
 
-    console.log(filterGenre)
+    // console.log(filterGenre)
 
   return (
       <div className='mx-4'>
