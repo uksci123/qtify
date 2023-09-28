@@ -1,7 +1,17 @@
 import Header from './Header'
 import Album from './Album'
 import headphone from '../assets/headphone.png'
+import FilterSongCategory from './FilterSongCategory'
+import ListSong from './ListSong'
+import { useState } from 'react'
 function Home() {
+
+  const [filterGenre , setFilterGenre] = useState('all');
+
+  const handleFilterGenre = (e)=>{
+    setFilterGenre(e)
+  }
+
   return (
     <>
       <Header/>
@@ -19,19 +29,27 @@ function Home() {
         </section>
 
         {/*Albums*/}
-        <section>
+        <section className='bg-secondry'>
             {/*Top Albums*/}
-            <article>
-              <Album/>
+            <article className='pb-8'>
+              <Album category={"top"}/>
             </article>
+            <article className='pb-8'>
             {/*New Albums*/}
-            <article>
+              <Album category={"new"}/>
             </article>
         </section>
 
         {/*Songs*/}
-        <section>
-            <article></article>
+        <section className='bg-secondry'>
+            {/*Song Filter*/}
+            <article className='mb-2'>
+                <FilterSongCategory handleGenre={handleFilterGenre}/>
+            </article>
+            {/*List Song*/}
+            <article>
+                <ListSong filterGenre={filterGenre}/>
+            </article>
         </section>
       </main>
 
