@@ -1,11 +1,8 @@
 import './App.css'
-
+import Home from './components/Home'
 function App() {
-
   return (
-      <>
-        <p>First Day of Building Qutify</p>
-      </>
+    <Home/>
   )
 }
 
