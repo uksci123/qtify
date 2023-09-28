@@ -36,7 +36,7 @@ const ListSong = ({filterGenre}) => {
           emulateTouch={true}
           width="100%" // Set the width of the carousel container
           slidesToShow={7} // Set the number of slides to show at once
-          centerMode={true} // Enable center mode
+          centerMode={true} // 
           centerSlidePercentage={100/7} // Adjust the center slide width percentage 
           showIndicators={false}
         >

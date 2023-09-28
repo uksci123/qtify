@@ -11,7 +11,7 @@ export default function MediaCard({id , image  , title , follows , isVisible} ) 
           <button className='ml-2 p-1'>{(follows/1000).toFixed(1)}K Follows</button>
         </div>
       </div>
-      <p className="text-xs ml-2">{title}</p>
+      <p className="text-xs text-left ml-2">{title}</p>
     </div>
   );
 }
