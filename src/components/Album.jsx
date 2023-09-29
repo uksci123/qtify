@@ -19,7 +19,7 @@ const Album = ({ category }) => {
 	const title = category.charAt(0).toUpperCase() + category.slice(1);
 	const [show, setShow] = useState(true);
 
-	// console.log(albumData);
+	console.log(albumData);
 
 	return (
 		<div className="text-main bg-secondry">

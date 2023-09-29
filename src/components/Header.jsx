@@ -5,7 +5,7 @@ import search from '../assets/search.png'
 const Header = () => {
 
   return (
-    <nav className='bg-primary w-full h-20 static flex items-center justify-between'>
+    <nav className='bg-primary w-full h-20 fixed z-50 flex items-center justify-between'>
 
         {/*Logo*/}
         <div className='w-16 h-9 ml-8'>

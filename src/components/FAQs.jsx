@@ -14,9 +14,9 @@ const FAQs = () => {
       const result = await axios.get("https://qtify-backend-labs.crio.do/faq");
       setFaq(result.data.data)
     })()
-  })
+  },[])
 
-  console.log(faq)
+  // console.log(faq)
   return (
     <div className='bg-secondry' >
     <p className='text-3xl text-center text-white py-10'>FAQs</p>
@@ -26,7 +26,7 @@ const FAQs = () => {
         return(
           <Accordion key={index} sx={{backgroundColor:'#121212', color:'white', marginBottom:'20px' , borderTop:'1px solid white', borderRadius:"5%"}}>
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon sx={{color:'#34C94B'}} />}
+              expandIcon={<ExpandMoreIcon sx={{color:'#34C94B', height:'2.5rem', width:'2.5rem'}}  />}
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
